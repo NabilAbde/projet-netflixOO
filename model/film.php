@@ -13,6 +13,24 @@
         public $runtimeMinutes = 222;
         public $imageFilm = "https://fr.shopping.rakuten.com/photo/1447890469.jpg";
 
+
+        /**
+         * Method __construct
+         *
+         * @param string $title correspond au titre original du film
+         * @param int $startYear annee de sortie du film
+         * @param int $runtimeMinutes duree en minutes du film
+         * @param string $imageFilm affiche l affiche du film via un lien
+         *
+         * @return void
+         */
+        public function __construct(string $title, int $startYear, int $runtimeMinutes, string $imageFilm)
+        {
+            $this->title = $title;
+            $this->startyear = $startYear;
+            $this->runtimeMinutes = $runtimeMinutes;
+            $this->imageFilm = $imageFilm;
+        }
         /**
          * Method displayTitle qui affiche le titre du film
          *

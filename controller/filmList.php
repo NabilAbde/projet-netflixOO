@@ -4,9 +4,9 @@ require_once('model/film.php');
 require_once('model/auteur.php');
 require_once('model/acteur.php');
 
-$oFilm = new Film();
-$oAuteur = new Auteur();
-$oActeur = new Acteur();
+$oFilm = new Film("Star Wars", 1977, 215, "https://fr.shopping.rakuten.com/photo/1447890469.jpg");
+
+
 
 /*appel par propriete :
 echo $oFilm->title;

@@ -13,9 +13,9 @@
     <?php include('view/inc/menu.php'); ?>
     <h1>Liste des auteurs</h1>
     <div>
-        <h2>Nom <?php $oAuteur->displayLastname(); ?></h2>
-        <p>Prenom <?php $oAuteur->displayFirstname(); ?></p>
-        <p>Date de naissance <?php $oAuteur->displayBirthday(); ?></p>
+        <h2>Nom : <?php $oAuteur->displayLastname(); ?></h2>
+        <h3>Prenom : <?php $oAuteur->displayFirstname(); ?></h3>
+        <p>Date de naissance : <?php $oAuteur->displayBirthday(); ?></p>
     </div>
     <img src=<?php $oAuteur->displayImage(); ?> alt="George lucas">
 </body>

@@ -8,10 +8,10 @@
     class Auteur
     { // Définition de nos proprietes
         //avec des valeurs par defaut
-        public $lastname = "Lucas";
-        public $firstname = "George";
-        public $birthdate = "1944-05-14"; // attention date en anglais
-        public $imageAutor ="https://fr.web.img6.acsta.net/pictures/15/12/18/10/51/568937.jpg";
+        public $lastname;
+        public $firstname ;
+        public $birthdate ; // attention date en anglais
+        public $imageAutor;
 
         /**
          * Method __construct

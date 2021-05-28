@@ -8,10 +8,10 @@
     class Film
     { // Définition de nos proprietes
         //avec des valeurs par defaut
-        public $title = "Star Wars";
-        public $startYear = 1977;
-        public $runtimeMinutes = 222;
-        public $imageFilm = "https://fr.shopping.rakuten.com/photo/1447890469.jpg";
+        public $title;
+        public $startYear;
+        public $runtimeMinutes;
+        public $imageFilm;
 
 
         /**
@@ -27,7 +27,7 @@
         public function __construct(string $title, int $startYear, int $runtimeMinutes, string $imageFilm)
         {
             $this->title = $title;
-            $this->startyear = $startYear;
+            $this->startYear = $startYear;
             $this->runtimeMinutes = $runtimeMinutes;
             $this->imageFilm = $imageFilm;
         }

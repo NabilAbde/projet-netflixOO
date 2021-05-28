@@ -4,7 +4,15 @@ require_once('model/film.php');
 require_once('model/auteur.php');
 require_once('model/acteur.php');
 
-$oFilm = new Film("Star Wars", 1977, 215, "https://fr.shopping.rakuten.com/photo/1447890469.jpg");
+
+
+
+if (!empty($_POST)) {
+    $oFilm = new Film($_POST["title"], $_POST["startyear"], $_POST["runtimeMinutes"], $_POST["imageFilm"]);
+} else {
+    $oFilm = new Film("Star Wars", 1977, 215, "https://fr.shopping.rakuten.com/photo/1447890469.jpg");
+}
+
 
 
 
@@ -28,4 +36,4 @@ $oAuteur->displayBirthday();
 <?php
 $oActeur->displayLastname();
 $oActeur->displayFirstname();
-$oActeur->displayBirthday();
+$oActeur->displayBirthday();*/

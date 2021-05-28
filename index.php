@@ -1,5 +1,7 @@
 <?php
-
+if (!empty($_POST)) {
+    $_GET = $_POST;
+}
 
 
 if (!empty($_GET)) :
@@ -16,6 +18,7 @@ if (!empty($_GET)) :
         case 'auteurList':
             require_once('view/auteurList.php');
             break;
+
 
         default:
             echo "La page que vous avez demandé n'existe pas";

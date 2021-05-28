@@ -9,5 +9,8 @@
         <li>
             <a href="?action=auteurList" title="Liste des auteurs">Liste des auteurs</a>
         </li>
+        <li>
+            <a href="?action=vforms" title="formulaire">Formulaire d'ajout</a>
+        </li>
     </ul>
 </nav>
